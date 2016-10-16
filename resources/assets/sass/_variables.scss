@@ -1,3 +1,12 @@
+// Palette
+$palette: (
+    'merlinblue': #46aad9,
+    'merlinyellow': #fec620
+);
+
+@function palette($key) {
+  @return map-get($palette, $key);
+}
 
 // Body
 $body-bg: #f5f8fa;
