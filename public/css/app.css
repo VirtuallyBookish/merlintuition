@@ -5769,10 +5769,28 @@ button.close {
 body {
   font-family: 'Roboto', sans-serif; }
 
+.footer {
+  background-color: #46aad9;
+  color: white;
+  padding: 10px; }
+  .footer h4 {
+    color: #c5e4f3;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c5e4f3; }
+  .footer a {
+    color: white; }
+  .footer .copyright a {
+    color: #fec620; }
+  .footer .fb-page {
+    display: block;
+    margin: auto;
+    width: 300px; }
+
 .hero {
   background: -webkit-linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)), url("/images/hero-image_1920.jpg");
   background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)), url("/images/hero-image_1920.jpg");
-  padding: 12px 0; }
+  padding: 55px 0 12px 0; }
   .hero-navigation {
     background-color: #46aad9; }
   .hero-content {
@@ -5786,8 +5804,17 @@ body {
     margin: 0; }
 
 .navbar, .navbar-default {
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
   background: none;
   border: none; }
+  .navbar .navbar-toggle .icon-bar, .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff; }
+  .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #fec620; }
+  .navbar.scrolled, .navbar.expanded, .navbar-default.scrolled, .navbar-default.expanded {
+    background-color: #46aad9;
+    box-shadow: 0px 7px 17px -5px rgba(0, 0, 0, 0.75); }
   .navbar .navbar-header, .navbar-default .navbar-header {
     padding: 7px; }
   .navbar .navbar-collapse, .navbar-default .navbar-collapse {
@@ -5804,18 +5831,20 @@ body {
       height: inherit;
       margin-right: 5px;
       background: url("/images/circle_hat.png"); }
-  .navbar .navbar-nav li a, .navbar-default .navbar-nav li a {
-    padding: 10px 10px;
-    margin: 5px 5px;
-    color: white;
-    border: 1px solid white;
-    text-align: center; }
-    .navbar .navbar-nav li a:hover, .navbar-default .navbar-nav li a:hover {
-      color: #fec620;
-      border-color: #fec620; }
-  .navbar .navbar-nav .active a, .navbar-default .navbar-nav .active a {
-    background: none;
-    color: white; }
+  .navbar .navbar-nav, .navbar-default .navbar-nav {
+    margin-top: 4px; }
+    .navbar .navbar-nav li a, .navbar-default .navbar-nav li a {
+      padding: 10px 10px;
+      margin: 5px 5px;
+      color: white;
+      border: 1px solid white;
+      text-align: center; }
+      .navbar .navbar-nav li a:hover, .navbar-default .navbar-nav li a:hover {
+        color: #fec620;
+        border-color: #fec620; }
+    .navbar .navbar-nav .active a, .navbar-default .navbar-nav .active a {
+      background: none;
+      color: white; }
 
 .hero-form .form-control {
   margin: 10px auto;

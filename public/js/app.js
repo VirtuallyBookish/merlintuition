@@ -36913,8 +36913,9 @@ module.exports = Vue$2;
  */
 
 require('./bootstrap');
+require('./navigation');
 
-},{"./bootstrap":8}],8:[function(require,module,exports){
+},{"./bootstrap":8,"./navigation":9}],8:[function(require,module,exports){
 'use strict';
 
 window._ = require('lodash');
@@ -36966,6 +36967,32 @@ Vue.http.interceptors.push(function (request, next) {
 //     key: 'your-pusher-key'
 // });
 
-},{"bootstrap-sass":1,"jquery":2,"lodash":3,"vue":6,"vue-resource":5}]},{},[7]);
+},{"bootstrap-sass":1,"jquery":2,"lodash":3,"vue":6,"vue-resource":5}],9:[function(require,module,exports){
+'use strict';
+
+$(document).scroll(function () {
+
+    var $navbar = $('.navbar');
+    if ($(window).scrollTop() === 0 && !$navbar.hasClass('expanded')) {
+        $navbar.removeClass('scrolled');
+    } else {
+        $navbar.addClass('scrolled');
+    }
+});
+
+$('.navbar-toggle').click(function () {
+    var $navbar = $('.navbar');
+    if (!$navbar.hasClass('expanded')) {
+        $navbar.addClass('expanded');
+    } else if ($navbar.hasClass('expanded')) {
+        $navbar.removeClass('expanded');
+    }
+
+    if ($(window).scrollTop() === 0 && $navbar.hasClass('scrolled')) {
+        $navbar.removeClass('scrolled');
+    }
+});
+
+},{}]},{},[7]);
 
 //# sourceMappingURL=app.js.map

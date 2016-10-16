@@ -4,6 +4,7 @@
 
 // Variables
 @import "variables";
+@import "mixins";
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
@@ -12,6 +13,7 @@
 @import "global/typography";
 
 // Components
+@import "components/footer";
 @import "components/navigation";
 @import "components/hero";
 

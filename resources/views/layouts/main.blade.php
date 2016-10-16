@@ -10,11 +10,13 @@
         <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
     </head>
     <body>
+        @include('components.facebook-link-script')
+
         @include('components.navigation')
 
-        <div class='container'>
-            @yield('content')
-        </div>
+        @yield('content')
+
+        @include('components.footer')
 
         <script type="text/javascript" src="{{ elixir('js/app.js') }}"></script>
     </body>
