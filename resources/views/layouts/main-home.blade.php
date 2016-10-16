@@ -10,11 +10,8 @@
         <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
     </head>
     <body>
-        @include('components.navigation')
 
-        <div class='container'>
-            @yield('content')
-        </div>
+        @yield('content')
 
         <script type="text/javascript" src="{{ elixir('js/app.js') }}"></script>
     </body>

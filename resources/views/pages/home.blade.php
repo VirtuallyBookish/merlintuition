@@ -1,7 +1,12 @@
-@extends('layouts.main')
+@extends('layouts.main-home')
 
 @section('content')
 
-    <h1>This is the home page!</h1>
+    @include('components.hero')
 
+    <div class="container">
+
+        <h1>This is the home page!</h1>
+
+    </div>
 @endsection
