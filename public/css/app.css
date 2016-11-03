@@ -5788,14 +5788,16 @@ body {
     width: 300px; }
 
 .hero {
-  background: -webkit-linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)), url("/images/hero-image_1920.jpg");
-  background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)), url("/images/hero-image_1920.jpg");
-  padding: 55px 0 12px 0; }
+  background: -webkit-linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("/images/hero-image_1920.jpg");
+  background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("/images/hero-image_1920.jpg");
+  padding: 55px 0 12px 0;
+  border-bottom: 4px solid #fec620;
+  height: 500px; }
   .hero-navigation {
     background-color: #46aad9; }
   .hero-content {
     color: white;
-    margin: 12px 0; }
+    margin: 30px 0; }
   .hero h1 {
     font-weight: 700;
     margin: 10px 0; }
@@ -5846,14 +5848,40 @@ body {
       background: none;
       color: white; }
 
-.hero-form .form-control {
-  margin: 10px auto;
-  width: 70%; }
+.hero-form {
+  margin-bottom: 30px; }
+  .hero-form .form-control {
+    margin: 10px auto;
+    width: 70%;
+    height: 45px;
+    border-radius: 23px; }
+  .hero-form .hero-select {
+    background: url("/images/select-arrow.png") no-repeat right rgba(255, 255, 255, 0.7);
+    height: 45px;
+    border-radius: 23px;
+    width: 70%;
+    margin: auto; }
+    .hero-form .hero-select .form-control {
+      width: 100%; }
+    .hero-form .hero-select select {
+      background: transparent;
+      -webkit-appearance: none; }
+  .hero-form .main-cta {
+    background: #46aad9;
+    background: -webkit-linear-gradient(110deg, #46aad9, #46d9cc);
+    background: -webkit-linear-gradient(340deg, #46aad9, #46d9cc);
+    background: linear-gradient(110deg, #46aad9, #46d9cc);
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+    border: none; }
 
 @media screen and (min-width: 768px) {
   .navbar-nav li a {
     width: 121px; }
   .hero-form .form-control {
+    width: 100%; }
+  .hero-form .hero-select {
     width: 100%; } }
 
 .container-home {
