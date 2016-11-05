@@ -5,7 +5,7 @@
                  url('/images/hero-image_1920.jpg');
     padding: 55px 0 12px 0;
     border-bottom: 4px solid palette('merlinyellow');
-    height: 500px;
+    min-height: 500px;
 
     &-navigation {
         background-color: palette('merlinblue');
@@ -105,6 +105,10 @@
 }
 
 // Hero Form Elements
+.hero-form-row {
+    margin-bottom: 55px;
+}
+
 .hero-form {
     margin-bottom: 30px;
 

@@ -5767,7 +5767,8 @@ button.close {
     display: none !important; } }
 
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  background-color: #dee6e6; }
 
 .footer {
   background-color: #46aad9;
@@ -5792,7 +5793,7 @@ body {
   background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("/images/hero-image_1920.jpg");
   padding: 55px 0 12px 0;
   border-bottom: 4px solid #fec620;
-  height: 500px; }
+  min-height: 500px; }
   .hero-navigation {
     background-color: #46aad9; }
   .hero-content {
@@ -5847,6 +5848,9 @@ body {
     .navbar .navbar-nav .active a, .navbar-default .navbar-nav .active a {
       background: none;
       color: white; }
+
+.hero-form-row {
+  margin-bottom: 55px; }
 
 .hero-form {
   margin-bottom: 30px; }
@@ -5903,22 +5907,36 @@ body {
         display: table-cell;
         vertical-align: middle; }
 
-.jumbo-card .jumbo-content {
+.jumbo-card {
   position: relative;
-  border-radius: 7px;
-  margin: 0 auto 30px auto;
-  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
   min-height: 300px;
-  width: 400px;
-  background-color: rgba(255, 255, 255, 0.9); }
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  border-radius: 7px;
+  padding: 15px; }
+  .jumbo-card .jumbo-content {
+    padding-left: 100px; }
+    .jumbo-card .jumbo-content h1 {
+      margin-top: 0; }
+    .jumbo-card .jumbo-content p {
+      font-size: 1.15em; }
 
-.jumbo-card .jumbo-content:before {
-  content: 'hello';
+.jumbo-card:before {
+  content: '';
   position: absolute;
-  width: 200px;
-  height: 50px;
-  background-color: #46aad9;
+  width: 91px;
+  height: 161px;
   top: -2px; }
+
+#brighton-label:before {
+  background: url("/images/circle_brighton_label.png"); }
+
+#hat-label:before {
+  background: url("/images/circle_hat_label.png"); }
+
+#clipboard-label:before {
+  background: url("/images/circle_clipboard_label.png"); }
 
 .testimonials h2 {
   color: #1cb890;

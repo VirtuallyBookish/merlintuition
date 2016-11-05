@@ -30,24 +30,45 @@
 }
 
 .jumbo-card {
-    .jumbo-content {
-        position: relative;
-        border-radius: 7px;
-        margin: 0 auto 30px auto;
-        padding: 15px;
-        min-height: 300px;
-        width: 400px;
-        background-color: rgba(255, 255, 255, 0.9);
-    }
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-height: 300px;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    border-radius: 7px;
+    padding: 15px;
 
-    .jumbo-content:before {
-        content: 'hello';
-        position: absolute;
-        width: 200px;
-        height: 50px;
-        background-color: palette('merlinblue');
-        top: -2px;
+    .jumbo-content {
+        padding-left: 100px;
+
+        h1 {
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.15em;
+        }
     }
+}
+
+.jumbo-card:before {
+    content: '';
+    position: absolute;
+    width: 91px;
+    height: 161px;
+    top: -2px;
+}
+
+#brighton-label:before {
+    background: url('/images/circle_brighton_label.png');
+}
+
+#hat-label:before {
+    background: url('/images/circle_hat_label.png');
+}
+
+#clipboard-label:before {
+    background: url('/images/circle_clipboard_label.png');
 }
 
 .testimonials {
