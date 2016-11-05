@@ -1,4 +1,5 @@
-<footer class="container-fluid footer">
+<div class="container-fluid footer">
+    <div class="container">
     <div class="row">
         <div class="col-sm-8">
             <div class="row">
@@ -31,4 +32,5 @@
             <p>Site Designed and Built by <a href="http://www.thomaswija.com/">Thomas Wija</a></p>
         </div>
     </div>
-</footer>
+    </div>
+</div>

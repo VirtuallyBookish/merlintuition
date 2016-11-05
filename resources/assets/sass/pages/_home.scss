@@ -1,5 +1,5 @@
 .container-home {
-    margin-top: 10px;
+    margin-top: -100px;
 
     .sales-row {
         position: relative;
@@ -27,6 +27,48 @@
             }
         }
     }
+}
+
+.jumbo-card {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-height: 300px;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    border-radius: 7px;
+    padding: 15px;
+
+    .jumbo-content {
+        padding-left: 100px;
+
+        h1 {
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.15em;
+        }
+    }
+}
+
+.jumbo-card:before {
+    content: '';
+    position: absolute;
+    width: 91px;
+    height: 161px;
+    top: -2px;
+}
+
+#brighton-label:before {
+    background: url('/images/circle_brighton_label.png');
+}
+
+#hat-label:before {
+    background: url('/images/circle_hat_label.png');
+}
+
+#clipboard-label:before {
+    background: url('/images/circle_clipboard_label.png');
 }
 
 .testimonials {

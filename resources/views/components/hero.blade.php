@@ -7,25 +7,25 @@
                     <h2>Call To Action - CHANGE</h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row hero-form-row">
             <div class="hero-form">
                 <div class="row">
                     <form>
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <div class="hero-select">
                                 <select class="form-control">
                                     <option>English</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <div class="hero-select">
                                 <select class="form-control">
                                     <option>Primary</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <button class="form-control main-cta">Find a tutor</button>
                         </div>
                     </form>
